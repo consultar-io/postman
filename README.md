@@ -1,6 +1,6 @@
 # Coleção do Postman
 
-Temos uma coleção do Postman para as APIs do Consultar.IO.
+Essa é a coleção do Postman para as APIs do Consultar.IO
 
 Acesse a coleção no Postman: [https://www.postman.com/consultar-io/apis-consultar-io/](https://www.postman.com/consultar-io/apis-consultar-io/overview)
 
