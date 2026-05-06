@@ -1,0 +1,2211 @@
+{
+  "info": {
+    "_postman_id": "67b8bdd6-d2a3-4670-919d-23be3058fa49",
+    "name": "APIs",
+    "description": "## Sobre\n\nAs APIs do [Consultar.IO](https://consultar.io/?utm_source=docs&utm_medium=referral&utm_campaign=index) são APIs RESTful que permitem consultar e buscar informações sobre estabelecimentos, pessoas, profissionais e endereços.\n\n## Autenticação\n\nConsulte a documentação de [Autenticação](https://docs.consultar.io/autenticacao/) para mais informações sobre o processo de autenticação.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49657121",
+    "_collection_link": "https://go.postman.co/collection/49657121-67b8bdd6-d2a3-4670-919d-23be3058fa49?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "API CNPJ",
+      "item": [
+        {
+          "name": "Consultar CNPJ",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://consultar.io/api/v1/cnpj/consultar?cnpj=42515236000100",
+              "protocol": "https",
+              "host": [
+                "consultar",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "cnpj",
+                "consultar"
+              ],
+              "query": [
+                {
+                  "key": "cnpj",
+                  "value": "42515236000100"
+                }
+              ]
+            },
+            "description": "## Consultar CNPJ\n\n**(Consultar pelo CNPJ)**\n\nConsulta detalhes de um CNPJ específico."
+          },
+          "response": [
+            {
+              "name": "200",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://consultar.io/api/v1/cnpj/consultar?cnpj=42515236000100",
+                  "protocol": "https",
+                  "host": [
+                    "consultar",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "cnpj",
+                    "consultar"
+                  ],
+                  "query": [
+                    {
+                      "key": "cnpj",
+                      "value": "42515236000100"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 29 Oct 2025 21:01:08 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "allow",
+                  "value": "OPTIONS, GET, POST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                },
+                {
+                  "key": "cross-origin-opener-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "speculation-rules",
+                  "value": "\"/cdn-cgi/speculation\""
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "99659b3b3e29c93b-IAD"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"cnpj\": \"42515236000100\",\n    \"cnpj_formatado\": \"42.515.236/0001-00\",\n    \"cnpj_base\": \"42515236\",\n    \"cnpj_ordem\": \"0001\",\n    \"cnpj_dv\": \"00\",\n    \"razao_social\": \"EXPANDA TECNOLOGIA DA INFORMACAO LTDA\",\n    \"nome_fantasia\": \"EXPANDA\",\n    \"natureza_juridica_codigo\": \"2062\",\n    \"natureza_juridica_descricao\": \"Sociedade Empresária Limitada\",\n    \"capital_social\": 250000,\n    \"capital_social_formatado\": \"R$ 250.000,00\",\n    \"porte_empresa_codigo\": \"01\",\n    \"porte_empresa_descricao\": \"Microempresa (ME)\",\n    \"ente_federativo_responsavel\": \"\",\n    \"matriz_filial_codigo\": \"1\",\n    \"matriz_filial_descricao\": \"Matriz\",\n    \"situacao_cadastral_codigo\": \"02\",\n    \"situacao_cadastral_descricao\": \"Ativa\",\n    \"data_situacao_cadastral\": \"2021-06-29\",\n    \"motivo_situacao_cadastral_codigo\": \"00\",\n    \"motivo_situacao_cadastral_descricao\": \"Sem motivo\",\n    \"situacao_especial\": \"\",\n    \"data_situacao_especial\": null,\n    \"cidade_exterior\": \"\",\n    \"pais_exterior_codigo\": \"\",\n    \"pais_exterior_descricao\": \"\",\n    \"data_inicio_atividades\": \"2021-06-29\",\n    \"cnae_principal_codigo\": \"6209100\",\n    \"cnae_principal_descricao\": \"Suporte técnico, manutenção e outros serviços em tecnologia da informação\",\n    \"lista_cnae_secundarios\": [\n        {\n            \"codigo\": \"6201501\",\n            \"descricao\": \"Desenvolvimento de programas de computador sob encomenda\"\n        },\n        {\n            \"codigo\": \"6201502\",\n            \"descricao\": \"Web design\"\n        },\n        {\n            \"codigo\": \"6202300\",\n            \"descricao\": \"Desenvolvimento e licenciamento de programas de computador customizáveis\"\n        },\n        {\n            \"codigo\": \"6203100\",\n            \"descricao\": \"Desenvolvimento e licenciamento de programas de computador não-customizáveis\"\n        },\n        {\n            \"codigo\": \"6204000\",\n            \"descricao\": \"Consultoria em tecnologia da informação\"\n        },\n        {\n            \"codigo\": \"6311900\",\n            \"descricao\": \"Tratamento de dados, provedores de serviços de aplicação e serviços de hospedagem na internet\"\n        },\n        {\n            \"codigo\": \"6319400\",\n            \"descricao\": \"Portais, provedores de conteúdo e outros serviços de informação na internet\"\n        },\n        {\n            \"codigo\": \"8599603\",\n            \"descricao\": \"Treinamento em informática\"\n        }\n    ],\n    \"tipo_logradouro\": \"AVENIDA\",\n    \"logradouro\": \"ENG LUIZ CARLOS BERRINI\",\n    \"numero\": \"1748\",\n    \"complemento\": \"CONJ 1710\",\n    \"bairro\": \"CONJ 1710\",\n    \"cep\": \"04571000\",\n    \"uf\": \"SP\",\n    \"municipio_codigo\": \"7107\",\n    \"municipio_descricao\": \"SAO PAULO\",\n    \"ddd1\": \"41\",\n    \"telefone1\": \"96869828\",\n    \"ddd2\": \"\",\n    \"telefone2\": \"\",\n    \"ddd_fax\": \"\",\n    \"fax\": \"\",\n    \"email\": \"meucnpj@contabilizei.com.br\",\n    \"lista_qsa\": [\n        {\n            \"tipo_qsa_codigo\": \"2\",\n            \"tipo_qsa_descricao\": \"PF\",\n            \"nome_qsa\": \"GABRIEL DOMENEGHETTI DE BARROS\",\n            \"cpf_cnpj_qsa\": \"XXX670478XX\",\n            \"cpf_cnpj_qsa_formatado\": \"XXX.670.478-XX\",\n            \"qualificacao_qsa_codigo\": \"49\",\n            \"qualificacao_qsa_descricao\": \"Sócio-Administrador\",\n            \"data_entrada_qsa\": \"2021-06-29\",\n            \"pais_exterior_qsa_codigo\": \"\",\n            \"pais_exterior_qsa_descricao\": \"\",\n            \"cpf_representante_legal_qsa\": \"\",\n            \"nome_representante_qsa\": \"\",\n            \"faixa_etaria_qsa_codigo\": \"3\",\n            \"faixa_etaria_qsa_descricao\": \"21-30\"\n        },\n        {\n            \"tipo_qsa_codigo\": \"2\",\n            \"tipo_qsa_descricao\": \"PF\",\n            \"nome_qsa\": \"FERNANDO HENRIQUE PEREIRA PINHO\",\n            \"cpf_cnpj_qsa\": \"XXX805398XX\",\n            \"cpf_cnpj_qsa_formatado\": \"XXX.805.398-XX\",\n            \"qualificacao_qsa_codigo\": \"49\",\n            \"qualificacao_qsa_descricao\": \"Sócio-Administrador\",\n            \"data_entrada_qsa\": \"2021-06-29\",\n            \"pais_exterior_qsa_codigo\": \"\",\n            \"pais_exterior_qsa_descricao\": \"\",\n            \"cpf_representante_legal_qsa\": \"\",\n            \"nome_representante_qsa\": \"\",\n            \"faixa_etaria_qsa_codigo\": \"3\",\n            \"faixa_etaria_qsa_descricao\": \"21-30\"\n        },\n        {\n            \"tipo_qsa_codigo\": \"2\",\n            \"tipo_qsa_descricao\": \"PF\",\n            \"nome_qsa\": \"GABRIEL GONCALVES BAU\",\n            \"cpf_cnpj_qsa\": \"XXX133018XX\",\n            \"cpf_cnpj_qsa_formatado\": \"XXX.133.018-XX\",\n            \"qualificacao_qsa_codigo\": \"22\",\n            \"qualificacao_qsa_descricao\": \"Sócio\",\n            \"data_entrada_qsa\": \"2023-07-03\",\n            \"pais_exterior_qsa_codigo\": \"\",\n            \"pais_exterior_qsa_descricao\": \"\",\n            \"cpf_representante_legal_qsa\": \"\",\n            \"nome_representante_qsa\": \"\",\n            \"faixa_etaria_qsa_codigo\": \"3\",\n            \"faixa_etaria_qsa_descricao\": \"21-30\"\n        },\n        {\n            \"tipo_qsa_codigo\": \"2\",\n            \"tipo_qsa_descricao\": \"PF\",\n            \"nome_qsa\": \"BRUNO OLIVEIRA DE ANDRADE E SILVA\",\n            \"cpf_cnpj_qsa\": \"XXX240708XX\",\n            \"cpf_cnpj_qsa_formatado\": \"XXX.240.708-XX\",\n            \"qualificacao_qsa_codigo\": \"22\",\n            \"qualificacao_qsa_descricao\": \"Sócio\",\n            \"data_entrada_qsa\": \"2024-09-19\",\n            \"pais_exterior_qsa_codigo\": \"\",\n            \"pais_exterior_qsa_descricao\": \"\",\n            \"cpf_representante_legal_qsa\": \"\",\n            \"nome_representante_qsa\": \"\",\n            \"faixa_etaria_qsa_codigo\": \"3\",\n            \"faixa_etaria_qsa_descricao\": \"21-30\"\n        }\n    ]\n}"
+            }
+          ]
+        }
+      ],
+      "description": "## Introdução\n\nEsta API permite consultar e buscar informações sobre empresas e estabelecimentos registrados no Cadastro Nacional de Pessoa Jurídica (CNPJ)."
+    },
+    {
+      "name": "API CPF + Data de Nascimento",
+      "item": [
+        {
+          "name": "Consultar CPF",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://consultar.io/api/v1/cpf/consultar?cpf=87135740009&data_nascimento=1990-01-01",
+              "protocol": "https",
+              "host": [
+                "consultar",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "cpf",
+                "consultar"
+              ],
+              "query": [
+                {
+                  "key": "cpf",
+                  "value": "87135740009"
+                },
+                {
+                  "key": "data_nascimento",
+                  "value": "1990-01-01"
+                }
+              ]
+            },
+            "description": "## Consultar CPF\n\n**(Consultar pelo CPF e Data de Nascimento)**\n\nConsulta detalhes de um CPF específico."
+          },
+          "response": [
+            {
+              "name": "200",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://consultar.io/api/v1/cpf/consultar?cpf=12345678900&data_nascimento=1990-01-01",
+                  "protocol": "https",
+                  "host": [
+                    "consultar",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "cpf",
+                    "consultar"
+                  ],
+                  "query": [
+                    {
+                      "key": "cpf",
+                      "value": "12345678900"
+                    },
+                    {
+                      "key": "data_nascimento",
+                      "value": "1990-01-01"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 29 Oct 2025 21:26:48 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "allow",
+                  "value": "OPTIONS, GET, POST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                },
+                {
+                  "key": "cross-origin-opener-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "speculation-rules",
+                  "value": "\"/cdn-cgi/speculation\""
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "9965bf9d8c7cf21f-GRU"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"cpf\": \"12345678900\",\n    \"nome\": \"MARIA DA SILVA SANTOS\",\n    \"data_nascimento\": \"1990-01-01\",\n    \"situacao\": \"REGULAR\",\n    \"data_inscricao\": \"2005-03-15\",\n    \"digito_verificador\": \"00\",\n    \"codigo_controle\": \"2406.5A89.0E54.747B\",\n    \"data_emissao\": \"2024-05-09\",\n    \"hora_emissao\": \"12:05:47\",\n    \"qrcode_url\": \"https://servicos.receita.fazenda.gov.br/Servicos/CPF/ca/ResultadoAut.asp?cp=12345678900&cc=24065A890E54747B&de=09052024&he=120547&dv=00&em=01\"\n}"
+            }
+          ]
+        }
+      ],
+      "description": "## Introdução\n\nEsta API permite consultar informações sobre pessoas físicas registradas no Cadastro de Pessoas Físicas (CPF) do Brasil.\n\n## Lei nº 15.211/2025 - ECA Digital\n\nUtilize nossos dados como parte de um fluxo robusto de verificação de idade. Integre nossa solução a outras soluções de autenticação e biometria para atender aos requisitos da Lei nº 15.211/2025, conhecida como \"ECA Digital\", que exige a verificação de idade para acesso a conteúdos e serviços online destinados a menores de 18 anos."
+    },
+    {
+      "name": "API Inscrição Estadual",
+      "item": [
+        {
+          "name": "Consultar IE por UF",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://consultar.io/api/v2/ie/consultar?uf=SP&cnpj=61585865150633",
+              "protocol": "https",
+              "host": [
+                "consultar",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "ie",
+                "consultar"
+              ],
+              "query": [
+                {
+                  "key": "uf",
+                  "value": "SP"
+                },
+                {
+                  "key": "cnpj",
+                  "value": "61585865150633"
+                }
+              ]
+            },
+            "description": "## Consultar IE por UF\n\n**(Consultar pelo CNPJ ou CPF)**\n\nConsulta detalhes de uma Inscrição Estadual específica."
+          },
+          "response": [
+            {
+              "name": "200",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://consultar.io/api/v2/ie/consultar?uf=SP&cnpj=61585865150633",
+                  "protocol": "https",
+                  "host": [
+                    "consultar",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v2",
+                    "ie",
+                    "consultar"
+                  ],
+                  "query": [
+                    {
+                      "key": "uf",
+                      "value": "SP"
+                    },
+                    {
+                      "key": "cnpj",
+                      "value": "61585865150633"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 29 Oct 2025 21:36:13 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "allow",
+                  "value": "OPTIONS, GET, POST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                },
+                {
+                  "key": "cross-origin-opener-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "speculation-rules",
+                  "value": "\"/cdn-cgi/speculation\""
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "9965ce961e0cf21f-GRU"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"cnpj\": \"61585865150633\",\n        \"razao_social\": \"RAIA DROGASIL S/A\",\n        \"nome_fantasia\": \"\",\n        \"uf_ie\": \"SP\",\n        \"ie\": \"535612879117\",\n        \"tipo_ie\": \"NÃO INFORMADO\",\n        \"situacao_ie\": \"HABILITADO\",\n        \"situacao_cnpj\": \"NÃO INFORMADO\",\n        \"data_situacao_uf\": \"22/06/2016\",\n        \"data_inicio\": \"22/06/2016\",\n        \"data_fim\": \"\",\n        \"cnae_principal_codigo\": \"4771701\",\n        \"regime_tributacao\": \"NORMAL - REGIME PERIÓDICO DE APURAÇÃO\",\n        \"ie_destinatario\": \"NÃO INFORMADO\",\n        \"porte_empresa\": \"NÃO INFORMADO\",\n        \"credito_presumido\": \"NÃO INFORMADO\",\n        \"tipo_produtor\": \"NÃO INFORMADO\",\n        \"logradouro\": \"AVENIDA INDEPENDENCIA\",\n        \"numero\": \"2906\",\n        \"complemento\": \"\",\n        \"bairro\": \"ALEMAES\",\n        \"cep\": \"13416240\",\n        \"uf\": \"SP\",\n        \"municipio_codigo\": \"3538709\",\n        \"municipio_descricao\": \"PIRACICABA\"\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Consultar IE em Todas as UFs",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://consultar.io/api/v2/ie/consultar/todas?cnpj=61585865150633",
+              "protocol": "https",
+              "host": [
+                "consultar",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "ie",
+                "consultar",
+                "todas"
+              ],
+              "query": [
+                {
+                  "key": "cnpj",
+                  "value": "61585865150633"
+                }
+              ]
+            },
+            "description": "## Consultar IE em Todas as UFs\n\n**(Consultar pelo CNPJ ou CPF)**\n\nConsulta detalhes de todas as Inscrições Estaduais em todas as UFs."
+          },
+          "response": [
+            {
+              "name": "200",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://consultar.io/api/v2/ie/consultar/todas?cnpj=61585865150633",
+                  "protocol": "https",
+                  "host": [
+                    "consultar",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v2",
+                    "ie",
+                    "consultar",
+                    "todas"
+                  ],
+                  "query": [
+                    {
+                      "key": "cnpj",
+                      "value": "61585865150633"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 29 Oct 2025 21:47:34 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "allow",
+                  "value": "OPTIONS, GET, POST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                },
+                {
+                  "key": "cross-origin-opener-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "speculation-rules",
+                  "value": "\"/cdn-cgi/speculation\""
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "9965def26f65f21f-GRU"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"uf\": \"AC\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"AL\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"AM\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"AP\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"BA\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"CE\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"DF\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"ES\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"GO\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"MA\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"MG\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"MS\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"MT\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"PA\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"PB\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"PE\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"PI\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"PR\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"RJ\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"RN\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"RO\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"RR\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"RS\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"SC\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"SE\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    },\n    {\n        \"uf\": \"SP\",\n        \"status_code\": 200,\n        \"success\": true,\n        \"message\": \"\",\n        \"results\": [\n            {\n                \"cnpj\": \"61585865150633\",\n                \"razao_social\": \"RAIA DROGASIL S/A\",\n                \"nome_fantasia\": \"\",\n                \"uf_ie\": \"SP\",\n                \"ie\": \"535612879117\",\n                \"tipo_ie\": \"NÃO INFORMADO\",\n                \"situacao_ie\": \"HABILITADO\",\n                \"situacao_cnpj\": \"NÃO INFORMADO\",\n                \"data_situacao_uf\": \"22/06/2016\",\n                \"data_inicio\": \"22/06/2016\",\n                \"data_fim\": \"\",\n                \"cnae_principal_codigo\": \"4771701\",\n                \"regime_tributacao\": \"NORMAL - REGIME PERIÓDICO DE APURAÇÃO\",\n                \"ie_destinatario\": \"NÃO INFORMADO\",\n                \"porte_empresa\": \"NÃO INFORMADO\",\n                \"credito_presumido\": \"NÃO INFORMADO\",\n                \"tipo_produtor\": \"NÃO INFORMADO\",\n                \"logradouro\": \"AVENIDA INDEPENDENCIA\",\n                \"numero\": \"2906\",\n                \"complemento\": \"\",\n                \"bairro\": \"ALEMAES\",\n                \"cep\": \"13416240\",\n                \"uf\": \"SP\",\n                \"municipio_codigo\": \"3538709\",\n                \"municipio_descricao\": \"PIRACICABA\"\n            }\n        ]\n    },\n    {\n        \"uf\": \"TO\",\n        \"status_code\": 404,\n        \"success\": false,\n        \"message\": \"Contribuinte não encontrado no banco de dados da SEFAZ da UF informada.\",\n        \"results\": []\n    }\n]"
+            }
+          ]
+        }
+      ],
+      "description": "## Introdução\n\nEsta API permite consultar informações sobre Inscrições Estaduais no SINTEGRA. A consulta de Inscrições Estaduais é realizada pelo CNPJ ou CPF do contribuinte, juntamente com a UF.\n\nTambém é possível consultar informações de Produtores Rurais pelo CPF."
+    },
+    {
+      "name": "API CEP",
+      "item": [
+        {
+          "name": "Consultar CEP",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://consultar.io/api/v2/cep/consultar?cep=04571000",
+              "protocol": "https",
+              "host": [
+                "consultar",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "cep",
+                "consultar"
+              ],
+              "query": [
+                {
+                  "key": "cep",
+                  "value": "04571000"
+                }
+              ]
+            },
+            "description": "## Consultar CEP\n\n**(Consultar pelo CEP)**\n\nConsulta detalhes de um CEP específico."
+          },
+          "response": [
+            {
+              "name": "200",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://consultar.io/api/v2/cep/consultar?cep=04571000",
+                  "protocol": "https",
+                  "host": [
+                    "consultar",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v2",
+                    "cep",
+                    "consultar"
+                  ],
+                  "query": [
+                    {
+                      "key": "cep",
+                      "value": "04571000"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 29 Oct 2025 21:39:41 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "allow",
+                  "value": "OPTIONS, GET, POST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                },
+                {
+                  "key": "cross-origin-opener-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "speculation-rules",
+                  "value": "\"/cdn-cgi/speculation\""
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "9965d3b52b50f21f-GRU"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"cep\": \"04571000\",\n    \"cep_formatado\": \"04571-000\",\n    \"tipo\": \"Logradouro\",\n    \"caixa_postal\": false,\n    \"nome\": null,\n    \"nome_abreviado\": null,\n    \"tipo_logradouro\": \"Avenida\",\n    \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n    \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini\",\n    \"complemento\": \"- até 99998 - lado par\",\n    \"bairro\": \"Cidade Monções\",\n    \"bairro_abreviado\": \"Cid Monções\",\n    \"localidade\": \"São Paulo\",\n    \"uf\": \"SP\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Buscar CEP",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://consultar.io/api/v2/cep/buscar?logradouro=Avenida Engenheiro Luiz Carlos Berrini&localidade=São Paulo&uf=SP",
+              "protocol": "https",
+              "host": [
+                "consultar",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "cep",
+                "buscar"
+              ],
+              "query": [
+                {
+                  "key": "logradouro",
+                  "value": "Avenida Engenheiro Luiz Carlos Berrini"
+                },
+                {
+                  "key": "localidade",
+                  "value": "São Paulo"
+                },
+                {
+                  "key": "uf",
+                  "value": "SP"
+                }
+              ]
+            },
+            "description": "## Buscar CEP\n\n**(Buscar pelo Endereço)**\n\nConsulta detalhes de um CEP específico."
+          },
+          "response": [
+            {
+              "name": "200",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://consultar.io/api/v2/cep/buscar?logradouro=Avenida Engenheiro Luiz Carlos Berrini&localidade=São Paulo&uf=SP",
+                  "protocol": "https",
+                  "host": [
+                    "consultar",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v2",
+                    "cep",
+                    "buscar"
+                  ],
+                  "query": [
+                    {
+                      "key": "logradouro",
+                      "value": "Avenida Engenheiro Luiz Carlos Berrini"
+                    },
+                    {
+                      "key": "localidade",
+                      "value": "São Paulo"
+                    },
+                    {
+                      "key": "uf",
+                      "value": "SP"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 29 Oct 2025 21:43:25 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "allow",
+                  "value": "OPTIONS, GET, POST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                },
+                {
+                  "key": "cross-origin-opener-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "speculation-rules",
+                  "value": "\"/cdn-cgi/speculation\""
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "9965d92e8ebef21f-GRU"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"cep\": \"04571010\",\n        \"cep_formatado\": \"04571-010\",\n        \"tipo\": \"Logradouro\",\n        \"caixa_postal\": false,\n        \"nome\": null,\n        \"nome_abreviado\": null,\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini\",\n        \"complemento\": \"- até 1405 - lado ímpar\",\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571011\",\n        \"cep_formatado\": \"04571-011\",\n        \"tipo\": \"Logradouro\",\n        \"caixa_postal\": false,\n        \"nome\": null,\n        \"nome_abreviado\": null,\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini\",\n        \"complemento\": \"- de 1407 ao fim - lado ímpar\",\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571000\",\n        \"cep_formatado\": \"04571-000\",\n        \"tipo\": \"Logradouro\",\n        \"caixa_postal\": false,\n        \"nome\": null,\n        \"nome_abreviado\": null,\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini\",\n        \"complemento\": \"- até 99998 - lado par\",\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571906\",\n        \"cep_formatado\": \"04571-906\",\n        \"tipo\": \"Grande Usuário\",\n        \"caixa_postal\": false,\n        \"nome\": \"Condomínio Edifício Carmel\",\n        \"nome_abreviado\": \"Cond Ed Carmel\",\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini, 962\",\n        \"complemento\": null,\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571900\",\n        \"cep_formatado\": \"04571-900\",\n        \"tipo\": \"Grande Usuário\",\n        \"caixa_postal\": false,\n        \"nome\": \"Companhia Brasileira de Distribuição - Pão de Açúcar\",\n        \"nome_abreviado\": \"Companhia B Distribuição - Pão Açúca\",\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini, 105\",\n        \"complemento\": null,\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571901\",\n        \"cep_formatado\": \"04571-901\",\n        \"tipo\": \"Grande Usuário\",\n        \"caixa_postal\": false,\n        \"nome\": \"Edifício Morumbi\",\n        \"nome_abreviado\": \"Ed Morumbi\",\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini, 801\",\n        \"complemento\": null,\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571936\",\n        \"cep_formatado\": \"04571-936\",\n        \"tipo\": \"Grande Usuário\",\n        \"caixa_postal\": false,\n        \"nome\": \"Telefônica Brasil S/A\",\n        \"nome_abreviado\": \"Telefônica Brasil S/A\",\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini, 1376\",\n        \"complemento\": null,\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571905\",\n        \"cep_formatado\": \"04571-905\",\n        \"tipo\": \"Grande Usuário\",\n        \"caixa_postal\": false,\n        \"nome\": \"Jaú Construtora Ltda\",\n        \"nome_abreviado\": \"Jaú Construtora Ltda\",\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini, 936\",\n        \"complemento\": null,\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571924\",\n        \"cep_formatado\": \"04571-924\",\n        \"tipo\": \"Grande Usuário\",\n        \"caixa_postal\": false,\n        \"nome\": \"Centro Administrativo Bandeirante\",\n        \"nome_abreviado\": \"Centro Adm Bandeirante\",\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini, 267\",\n        \"complemento\": null,\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571925\",\n        \"cep_formatado\": \"04571-925\",\n        \"tipo\": \"Grande Usuário\",\n        \"caixa_postal\": false,\n        \"nome\": \"Edifício Condomínio Berrini 550\",\n        \"nome_abreviado\": \"Ed Cond Berrini 550\",\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini, 550\",\n        \"complemento\": null,\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571926\",\n        \"cep_formatado\": \"04571-926\",\n        \"tipo\": \"Grande Usuário\",\n        \"caixa_postal\": false,\n        \"nome\": \"Edifício Condomínio Palace Berrini\",\n        \"nome_abreviado\": \"Ed Cond Palace Berrini\",\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini, 716\",\n        \"complemento\": null,\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571927\",\n        \"cep_formatado\": \"04571-927\",\n        \"tipo\": \"Grande Usuário\",\n        \"caixa_postal\": false,\n        \"nome\": \"Edifício Condomínio Bandeirantes\",\n        \"nome_abreviado\": \"Ed Cond Bandeirantes\",\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini, 828\",\n        \"complemento\": null,\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571928\",\n        \"cep_formatado\": \"04571-928\",\n        \"tipo\": \"Grande Usuário\",\n        \"caixa_postal\": false,\n        \"nome\": \"Edifício Condomínio Estanplaza\",\n        \"nome_abreviado\": \"Ed Cond Estanplaza\",\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini, 857\",\n        \"complemento\": null,\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571929\",\n        \"cep_formatado\": \"04571-929\",\n        \"tipo\": \"Grande Usuário\",\n        \"caixa_postal\": false,\n        \"nome\": \"Edifício Condomínio San Thomaz\",\n        \"nome_abreviado\": \"Ed Cond San Thomaz\",\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini, 1139\",\n        \"complemento\": null,\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571930\",\n        \"cep_formatado\": \"04571-930\",\n        \"tipo\": \"Grande Usuário\",\n        \"caixa_postal\": false,\n        \"nome\": \"Edifício Condomínio Berrini Laura\",\n        \"nome_abreviado\": \"Ed Cond Berrini Laura\",\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini, 1140\",\n        \"complemento\": null,\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571931\",\n        \"cep_formatado\": \"04571-931\",\n        \"tipo\": \"Grande Usuário\",\n        \"caixa_postal\": false,\n        \"nome\": \"Edifício Condomínio Urca\",\n        \"nome_abreviado\": \"Ed Cond Urca\",\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini, 1178\",\n        \"complemento\": null,\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571932\",\n        \"cep_formatado\": \"04571-932\",\n        \"tipo\": \"Grande Usuário\",\n        \"caixa_postal\": false,\n        \"nome\": \"Edifício Condomínio Sudameris\",\n        \"nome_abreviado\": \"Ed Cond Sudameris\",\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini, 1297\",\n        \"complemento\": null,\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571933\",\n        \"cep_formatado\": \"04571-933\",\n        \"tipo\": \"Grande Usuário\",\n        \"caixa_postal\": false,\n        \"nome\": \"Phenix\",\n        \"nome_abreviado\": \"Phenix\",\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini, 1375\",\n        \"complemento\": null,\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571934\",\n        \"cep_formatado\": \"04571-934\",\n        \"tipo\": \"Grande Usuário\",\n        \"caixa_postal\": false,\n        \"nome\": \"Edifício Condomínio Arthur Bernardes\",\n        \"nome_abreviado\": \"Ed Cond Arthur Bernardes\",\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini, 1500\",\n        \"complemento\": null,\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571935\",\n        \"cep_formatado\": \"04571-935\",\n        \"tipo\": \"Grande Usuário\",\n        \"caixa_postal\": false,\n        \"nome\": \"Berrini Trade Center\",\n        \"nome_abreviado\": \"Berrini T Center\",\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini, 1700\",\n        \"complemento\": null,\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571903\",\n        \"cep_formatado\": \"04571-903\",\n        \"tipo\": \"Grande Usuário\",\n        \"caixa_postal\": false,\n        \"nome\": \"Texas Instrumentos Eletrônicos do Brasil\",\n        \"nome_abreviado\": \"Texas I E Brasil\",\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini, 1461\",\n        \"complemento\": null,\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571902\",\n        \"cep_formatado\": \"04571-902\",\n        \"tipo\": \"Grande Usuário\",\n        \"caixa_postal\": false,\n        \"nome\": \"Sampaio Ferreira\",\n        \"nome_abreviado\": \"Sampaio Ferreira\",\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini, 1253\",\n        \"complemento\": null,\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    },\n    {\n        \"cep\": \"04571989\",\n        \"cep_formatado\": \"04571-989\",\n        \"tipo\": \"Locker\",\n        \"caixa_postal\": true,\n        \"nome\": \"LCK Locker Vivo Berrini\",\n        \"nome_abreviado\": \"LCK Locker Vivo Berrini\",\n        \"tipo_logradouro\": \"Avenida\",\n        \"nome_logradouro\": \"Engenheiro Luiz Carlos Berrini\",\n        \"logradouro\": \"Avenida Engenheiro Luiz Carlos Berrini, 1376\",\n        \"complemento\": null,\n        \"bairro\": \"Cidade Monções\",\n        \"bairro_abreviado\": \"Cid Monções\",\n        \"localidade\": \"São Paulo\",\n        \"uf\": \"SP\"\n    }\n]"
+            }
+          ]
+        }
+      ],
+      "description": "## Introdução\n\nEsta API permite consultar os dados de um endereço a partir de um CEP."
+    },
+    {
+      "name": "API Geocodificação",
+      "item": [
+        {
+          "name": "Consultar Geocodificação",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://consultar.io/api/v2/geocodificacao/consultar?endereco=AVENIDA ENGENHEIRO LUIZ CARLOS BERRINI, 1748, SAO PAULO, SP",
+              "protocol": "https",
+              "host": [
+                "consultar",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "geocodificacao",
+                "consultar"
+              ],
+              "query": [
+                {
+                  "key": "endereco",
+                  "value": "AVENIDA ENGENHEIRO LUIZ CARLOS BERRINI, 1748, SAO PAULO, SP"
+                }
+              ]
+            },
+            "description": "## Consultar Geocodificação\n\n**(Consultar pelo Endereço)**\n\nConsulta as coordenadas geográficas de um endereço específico."
+          },
+          "response": [
+            {
+              "name": "200",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://consultar.io/api/v2/geocodificacao/consultar?endereco=AVENIDA ENGENHEIRO LUIZ CARLOS BERRINI, 1748, SAO PAULO, SP",
+                  "protocol": "https",
+                  "host": [
+                    "consultar",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v2",
+                    "geocodificacao",
+                    "consultar"
+                  ],
+                  "query": [
+                    {
+                      "key": "endereco",
+                      "value": "AVENIDA ENGENHEIRO LUIZ CARLOS BERRINI, 1748, SAO PAULO, SP"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 29 Oct 2025 21:50:33 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "allow",
+                  "value": "OPTIONS, GET, POST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                },
+                {
+                  "key": "cross-origin-opener-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "speculation-rules",
+                  "value": "\"/cdn-cgi/speculation\""
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "9965e3a1a961f21f-GRU"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"licenca\": \"https://consultar.io/licencas\",\n    \"logradouro\": \"Avenida Engenheiro Luís Carlos Berrini\",\n    \"bairro\": \"Vila Olímpia\",\n    \"localidade\": \"São Paulo\",\n    \"uf\": \"SP\",\n    \"latitude\": -23.6004352,\n    \"longitude\": -46.6910367\n}"
+            }
+          ]
+        },
+        {
+          "name": "Consultar Geocodificação Reversa",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://consultar.io/api/v2/geocodificacao/reversa/consultar?coordenadas=-23.6004352,-46.6910367",
+              "protocol": "https",
+              "host": [
+                "consultar",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "geocodificacao",
+                "reversa",
+                "consultar"
+              ],
+              "query": [
+                {
+                  "key": "coordenadas",
+                  "value": "-23.6004352,-46.6910367"
+                }
+              ]
+            },
+            "description": "## Consultar Geocodificação Reversa\n\n**(Consultar pela Latitude/Longitude)**\n\nConsulta o endereço a partir de coordenadas geográficas."
+          },
+          "response": [
+            {
+              "name": "200",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://consultar.io/api/v2/geocodificacao/reversa/consultar?coordenadas=-23.6004352,-46.6910367",
+                  "protocol": "https",
+                  "host": [
+                    "consultar",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v2",
+                    "geocodificacao",
+                    "reversa",
+                    "consultar"
+                  ],
+                  "query": [
+                    {
+                      "key": "coordenadas",
+                      "value": "-23.6004352,-46.6910367"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 29 Oct 2025 21:52:27 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "allow",
+                  "value": "OPTIONS, GET, POST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                },
+                {
+                  "key": "cross-origin-opener-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "speculation-rules",
+                  "value": "\"/cdn-cgi/speculation\""
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "9965e6667f53f21f-GRU"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"licenca\": \"https://consultar.io/licencas\",\n    \"logradouro\": \"Avenida Engenheiro Luís Carlos Berrini\",\n    \"bairro\": \"Vila Olímpia\",\n    \"localidade\": \"São Paulo\",\n    \"uf\": \"SP\",\n    \"latitude\": -23.6004352,\n    \"longitude\": -46.6910368\n}"
+            }
+          ]
+        }
+      ],
+      "description": "## Introdução\n\nEsta API permite consultar a latitude e longitude de um endereço, também conhecido como geocodificação, em inglês, \"geocode\" ou \"geocoding\"."
+    },
+    {
+      "name": "API CRM",
+      "item": [
+        {
+          "name": "Consultar CRM",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://consultar.io/api/v1/crm/consultar?uf=SP&numero_registro=1234567",
+              "protocol": "https",
+              "host": [
+                "consultar",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "crm",
+                "consultar"
+              ],
+              "query": [
+                {
+                  "key": "uf",
+                  "value": "SP"
+                },
+                {
+                  "key": "numero_registro",
+                  "value": "1234567"
+                }
+              ]
+            },
+            "description": "## Consultar CRM\n\n**(Consultar pelo CRM)**\n\nConsulta detalhes de um registro específico."
+          },
+          "response": [
+            {
+              "name": "200",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://consultar.io/api/v1/crm/consultar?uf=SP&numero_registro=1234567",
+                  "protocol": "https",
+                  "host": [
+                    "consultar",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "crm",
+                    "consultar"
+                  ],
+                  "query": [
+                    {
+                      "key": "uf",
+                      "value": "SP"
+                    },
+                    {
+                      "key": "numero_registro",
+                      "value": "1234567"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 29 Oct 2025 21:55:24 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "allow",
+                  "value": "OPTIONS, GET, POST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                },
+                {
+                  "key": "cross-origin-opener-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "speculation-rules",
+                  "value": "\"/cdn-cgi/speculation\""
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "9965eabb5beff21f-GRU"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"uf\": \"SP\",\n    \"numero_registro\": \"1234567\",\n    \"categoria\": \"MÉDICO\",\n    \"nome_razao_social\": \"JOÃO DA SILVA\",\n    \"situacao\": \"ATIVO\",\n    \"tipo_inscricao\": \"PRINCIPAL\",\n    \"especialidades\": \"CLÍNICA MÉDICA - RQE Nº 74493, ENDOCRINOLOGIA E METABOLOGIA - RQE Nº 85498\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Buscar CRM",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://consultar.io/api/v1/crm/buscar?nome_razao_social=joao silva",
+              "protocol": "https",
+              "host": [
+                "consultar",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "crm",
+                "buscar"
+              ],
+              "query": [
+                {
+                  "key": "nome_razao_social",
+                  "value": "joao silva"
+                }
+              ]
+            },
+            "description": "## Buscar CRM\n\n(Buscar pelo Nome)\n\nRealiza busca de médicos pelo nome."
+          },
+          "response": [
+            {
+              "name": "200",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://consultar.io/api/v1/crm/buscar?nome_razao_social=joao silva",
+                  "protocol": "https",
+                  "host": [
+                    "consultar",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "crm",
+                    "buscar"
+                  ],
+                  "query": [
+                    {
+                      "key": "nome_razao_social",
+                      "value": "joao silva"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 29 Oct 2025 22:29:15 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "allow",
+                  "value": "OPTIONS, GET, POST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                },
+                {
+                  "key": "cross-origin-opener-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "speculation-rules",
+                  "value": "\"/cdn-cgi/speculation\""
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "99661c4d8e57f17b-GRU"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"uf\": \"SP\",\n        \"numero_registro\": \"1234567\",\n        \"categoria\": \"MÉDICO\",\n        \"nome_razao_social\": \"JOÃO DA SILVA\"\n    },\n    {\n        \"uf\": \"SP\",\n        \"numero_registro\": \"1234568\",\n        \"categoria\": \"MÉDICO\",\n        \"nome_razao_social\": \"JOÃO DOS SANTOS SILVA\"\n    }\n]"
+            }
+          ]
+        }
+      ],
+      "description": "## Introdução\n\nEsta API permite consultar e buscar informações sobre médicos registrados nos Conselhos Regionais de Medicina (CRM) do Brasil."
+    },
+    {
+      "name": "API CRO",
+      "item": [
+        {
+          "name": "Consultar CRO",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://consultar.io/api/v1/cro/consultar?uf=SP&numero_registro=1234567&categoria=cd",
+              "protocol": "https",
+              "host": [
+                "consultar",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "cro",
+                "consultar"
+              ],
+              "query": [
+                {
+                  "key": "uf",
+                  "value": "SP"
+                },
+                {
+                  "key": "numero_registro",
+                  "value": "1234567"
+                },
+                {
+                  "key": "categoria",
+                  "value": "cd"
+                }
+              ]
+            },
+            "description": "## Consultar CRO\n\n(Consultar pelo CRO)\n\nConsulta detalhes de um registro específico."
+          },
+          "response": [
+            {
+              "name": "200",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://consultar.io/api/v1/cro/consultar?uf=SP&numero_registro=1234567&categoria=cd",
+                  "protocol": "https",
+                  "host": [
+                    "consultar",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "cro",
+                    "consultar"
+                  ],
+                  "query": [
+                    {
+                      "key": "uf",
+                      "value": "SP"
+                    },
+                    {
+                      "key": "numero_registro",
+                      "value": "1234567"
+                    },
+                    {
+                      "key": "categoria",
+                      "value": "cd"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Wed, 29 Oct 2025 22:28:00 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "allow",
+                  "value": "OPTIONS, GET, POST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                },
+                {
+                  "key": "cross-origin-opener-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "speculation-rules",
+                  "value": "\"/cdn-cgi/speculation\""
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "99661a7b8d5d625d-GRU"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"uf\": \"SP\",\n    \"numero_registro\": \"1234567\",\n    \"categoria\": \"CIRURGIÃO-DENTISTA\",\n    \"nome_razao_social\": \"JOÃO SILVA\",\n    \"situacao\": \"ATIVO\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Buscar CRO",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://consultar.io/api/v1/cro/buscar?nome_razao_social=joao silva&categoria=cd",
+              "protocol": "https",
+              "host": [
+                "consultar",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "cro",
+                "buscar"
+              ],
+              "query": [
+                {
+                  "key": "nome_razao_social",
+                  "value": "joao silva"
+                },
+                {
+                  "key": "categoria",
+                  "value": "cd"
+                }
+              ]
+            },
+            "description": "## Buscar CRO\n\n**(Buscar pelo Nome)**\n\nRealiza busca de profissionais/estabelecimentos pelo nome."
+          },
+          "response": [
+            {
+              "name": "200",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://consultar.io/api/v1/cro/buscar?nome_razao_social=joao silva&categoria=cd",
+                  "protocol": "https",
+                  "host": [
+                    "consultar",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "cro",
+                    "buscar"
+                  ],
+                  "query": [
+                    {
+                      "key": "nome_razao_social",
+                      "value": "joao silva"
+                    },
+                    {
+                      "key": "categoria",
+                      "value": "cd"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Thu, 30 Oct 2025 11:06:16 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "allow",
+                  "value": "OPTIONS, GET, POST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                },
+                {
+                  "key": "cross-origin-opener-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "speculation-rules",
+                  "value": "\"/cdn-cgi/speculation\""
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "996a7133cd3335d8-GRU"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "[\n    {\n        \"uf\": \"SP\",\n        \"numero_registro\": \"1234567\",\n        \"categoria\": \"CIRURGIÃO-DENTISTA\",\n        \"nome_razao_social\": \"JOÃO SILVA\"\n    },\n    {\n        \"uf\": \"SP\",\n        \"numero_registro\": \"1234567\",\n        \"categoria\": \"CIRURGIÃO-DENTISTA\",\n        \"nome_razao_social\": \"JOÃO DOS SANTOS SILVA\"\n    }\n]"
+            }
+          ]
+        }
+      ],
+      "description": "## Introdução\n\nEsta API permite consultar e buscar informações sobre profissionais e estabelecimentos registrados nos Conselhos Regionais de Odontologia (CRO) do Brasil."
+    },
+    {
+      "name": "API CRBM",
+      "item": [
+        {
+          "name": "Consultar CRBM",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://consultar.io/api/v1/crbm/consultar?regiao=01&numero_registro=1234567",
+              "protocol": "https",
+              "host": [
+                "consultar",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "crbm",
+                "consultar"
+              ],
+              "query": [
+                {
+                  "key": "regiao",
+                  "value": "01"
+                },
+                {
+                  "key": "numero_registro",
+                  "value": "1234567"
+                }
+              ]
+            },
+            "description": "## Consultar CRBM\n\n**(Consultar pelo CRBM)**\n\nConsulta detalhes de um registro específico."
+          },
+          "response": [
+            {
+              "name": "200",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://consultar.io/api/v1/crbm/consultar?regiao=01&numero_registro=1234567",
+                  "protocol": "https",
+                  "host": [
+                    "consultar",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "crbm",
+                    "consultar"
+                  ],
+                  "query": [
+                    {
+                      "key": "regiao",
+                      "value": "01"
+                    },
+                    {
+                      "key": "numero_registro",
+                      "value": "1234567"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Thu, 30 Oct 2025 11:10:15 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "allow",
+                  "value": "OPTIONS, GET, POST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                },
+                {
+                  "key": "cross-origin-opener-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "speculation-rules",
+                  "value": "\"/cdn-cgi/speculation\""
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "996a771298af1aac-GRU"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"regiao\": \"01\",\n    \"numero_registro\": \"123456\",\n    \"categoria\": \"BIOMÉDICO\",\n    \"nome_razao_social\": \"JOÃO SILVA\",\n    \"situacao\": \"ATIVO\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Buscar CRBM",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://consultar.io/api/v1/crbm/buscar?nome_razao_social=joao silva",
+              "protocol": "https",
+              "host": [
+                "consultar",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "crbm",
+                "buscar"
+              ],
+              "query": [
+                {
+                  "key": "nome_razao_social",
+                  "value": "joao silva"
+                }
+              ]
+            },
+            "description": "## Buscar CRBM\n\n**(Buscar pelo Nome)**\n\nRealiza busca de profissionais pelo nome."
+          },
+          "response": [
+            {
+              "name": "200",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://consultar.io/api/v1/crbm/buscar?nome_razao_social=joao silva",
+                  "protocol": "https",
+                  "host": [
+                    "consultar",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "crbm",
+                    "buscar"
+                  ],
+                  "query": [
+                    {
+                      "key": "nome_razao_social",
+                      "value": "joao silva"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Thu, 30 Oct 2025 11:11:49 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "allow",
+                  "value": "OPTIONS, GET, POST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                },
+                {
+                  "key": "cross-origin-opener-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "speculation-rules",
+                  "value": "\"/cdn-cgi/speculation\""
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "996a79570baf1b20-GRU"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"regiao\": \"01\",\n        \"numero_registro\": \"1234567\",\n        \"categoria\": \"BIOMÉDICO\",\n        \"nome_razao_social\": \"JOÃO SILVA\"\n    },\n    {\n        \"regiao\": \"01\",\n        \"numero_registro\": \"1234568\",\n        \"categoria\": \"BIOMÉDICO\",\n        \"nome_razao_social\": \"JOÃO DOS SANTOS SILVA\"\n    }\n]"
+            }
+          ]
+        }
+      ],
+      "description": "## Introdução\n\nEsta API permite consultar e buscar informações sobre profissionais e estabelecimentos registrados nos Conselhos Regionais de Biomedicina (CRBM) do Brasil."
+    },
+    {
+      "name": "API CRF",
+      "item": [
+        {
+          "name": "Consultar CRF",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://consultar.io/api/v1/crf/consultar?uf=SP&numero_registro=1234567",
+              "protocol": "https",
+              "host": [
+                "consultar",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "crf",
+                "consultar"
+              ],
+              "query": [
+                {
+                  "key": "uf",
+                  "value": "SP"
+                },
+                {
+                  "key": "numero_registro",
+                  "value": "1234567"
+                }
+              ]
+            },
+            "description": "## Consultar CRF\n\n**(Consultar pelo CRF)**\n\nConsulta detalhes de um registro específico."
+          },
+          "response": [
+            {
+              "name": "200",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://consultar.io/api/v1/crf/consultar?uf=SP&numero_registro=1234567",
+                  "protocol": "https",
+                  "host": [
+                    "consultar",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "crf",
+                    "consultar"
+                  ],
+                  "query": [
+                    {
+                      "key": "uf",
+                      "value": "SP"
+                    },
+                    {
+                      "key": "numero_registro",
+                      "value": "1234567"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Thu, 30 Oct 2025 11:15:41 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "allow",
+                  "value": "OPTIONS, GET, POST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                },
+                {
+                  "key": "cross-origin-opener-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "referrer-policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "speculation-rules",
+                  "value": "\"/cdn-cgi/speculation\""
+                },
+                {
+                  "key": "Server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "CF-RAY",
+                  "value": "996a7ed54cd4bf10-GRU"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"uf\": \"SP\",\n    \"numero_registro\": \"1234567\",\n    \"categoria\": \"FARMACÊUTICO\",\n    \"nome_razao_social\": \"JOÃO DA SILVA\",\n    \"situacao\": \"DEFINITIVO\",\n    \"cidade\": \"SÃO PAULO\",\n    \"data_inscricao\": \"2025-08-29\",\n    \"data_inscricao_formatada\": \"29/08/2025\",\n    \"cpf\": \"15685971001\",\n    \"cpf_formatado\": \"156.859.710-01\"\n}"
+            }
+          ]
+        }
+      ],
+      "description": "## Introdução\n\nEsta API permite consultar profissionais e estabelecimentos registrados nos Conselhos Regionais de Farmácia (CRF) do Brasil."
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "Token {{token}}",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "token",
+      "value": ""
+    }
+  ]
+}
